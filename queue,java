@@ -1,0 +1,23 @@
+import java.util.PriorityQueue;
+
+public class PriorityQueueSearch {
+    public static void main(String[] args) {
+       
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        pq.add(10);
+        pq.add(20);
+        pq.add(15);
+        pq.add(30);
+        pq.add(5);
+
+       
+        int elementToSearch = 15;
+
+        
+        if (pq.contains(elementToSearch)) {
+            System.out.println("Element " + elementToSearch + " found in the PriorityQueue.");
+        } else {
+            System.out.println("Element " + elementToSearch + " not found in the PriorityQueue.");
+        }
+    }
+}
